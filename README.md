@@ -9,6 +9,28 @@
 
 ---
 
+## 🖥️ 系統實際畫面
+
+### 1. 行銷活動工作坊
+
+![行銷活動工作坊：左側輸入 Brief，右側即時顯示成果與 Agent 協作狀態](./screenshots/01-workshop.png)
+
+使用者可直接套用家人、照護機構或特約醫材行 Preset，再調整產品說明、目標客群、活動目標、品牌色與 CTA。右側同步呈現專案狀態、海報、短影音及 Agent 協作結果，讓輸入與產出集中在同一個工作畫面。
+
+### 2. 專案與輸出管理
+
+![專案與輸出管理：集中查看海報、影片、Agent 對話、版本與人工審核](./screenshots/02-project-output.png)
+
+左側保留每次執行的專案與狀態；右側整合海報 PNG、短影音 MP4、Agent 對話紀錄、Artifact 版本及審核結果。當系統判定需要人工確認時，可在同一頁修改文案後重跑，或由人員直接核准。
+
+### 3. 角色與 API 管理後台
+
+![角色與 API 管理後台：管理模型 Provider、角色啟用狀態與 System Prompt](./screenshots/03-agent-settings.png)
+
+管理者可切換 Mock、Gemini 或 Ollama，並個別控制 Strategist、Copywriter、Art Director、Reviewer 與 Supervisor。每個角色的 System Prompt 可直接修改並持久化保存，不需要重啟服務。
+
+---
+
 ## 🚀 本次升級三大核心模組
 
 

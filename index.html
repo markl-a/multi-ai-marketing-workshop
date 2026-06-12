@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="iCue 智慧照護行銷工作坊完整操作演示影片">
-  <title>iCue 智慧照護行銷工作坊 | 操作演示</title>
+  <meta name="description" content="iCue 智慧照護行銷工作坊操作影片、系統截圖與功能說明">
+  <title>iCue 智慧照護行銷工作坊 | 成果展示</title>
   <style>
     :root {
       color-scheme: dark;
@@ -25,7 +25,7 @@
         #07111f;
     }
     main {
-      width: min(1080px, 100%);
+      width: min(1180px, 100%);
       padding: clamp(20px, 4vw, 48px);
       border: 1px solid rgba(255, 255, 255, .12);
       border-radius: 24px;
@@ -49,6 +49,15 @@
       max-width: 760px;
       margin: 16px 0 28px;
       color: #b8c8d9;
+      line-height: 1.7;
+    }
+    h2 {
+      margin: 56px 0 10px;
+      font-size: clamp(24px, 4vw, 36px);
+    }
+    .section-summary {
+      margin: 0 0 24px;
+      color: #9fb1c5;
       line-height: 1.7;
     }
     video {
@@ -81,6 +90,36 @@
       background: #168ad0;
     }
     a:hover { filter: brightness(1.12); }
+    .gallery {
+      display: grid;
+      gap: 28px;
+    }
+    figure {
+      margin: 0;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, .12);
+      border-radius: 18px;
+      background: rgba(6, 16, 29, .72);
+    }
+    figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-bottom: 1px solid rgba(255, 255, 255, .12);
+    }
+    figcaption {
+      padding: 22px;
+    }
+    figcaption strong {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 20px;
+    }
+    figcaption p {
+      margin: 0;
+      color: #b8c8d9;
+      line-height: 1.7;
+    }
   </style>
 </head>
 <body>
@@ -96,6 +135,34 @@
       <a href="icue_gemini_real_run.mp4" download>下載 MP4 影片</a>
       <a href="https://github.com/markl-a/multi-ai-marketing-workshop">查看完整成果報告</a>
     </nav>
+
+    <section aria-labelledby="screenshots-title">
+      <h2 id="screenshots-title">系統實際畫面</h2>
+      <p class="section-summary">從行銷 Brief、AI 協作到成果審核與角色管理，所有流程都集中在同一套內網操作介面。</p>
+      <div class="gallery">
+        <figure>
+          <img src="screenshots/01-workshop.png" alt="行銷活動工作坊介面" loading="lazy">
+          <figcaption>
+            <strong>1. 行銷活動工作坊</strong>
+            <p>套用長照客群 Preset、輸入產品與活動資訊，並在右側即時查看海報、短影音和 Agent 協作狀態。</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="screenshots/02-project-output.png" alt="專案與輸出管理介面" loading="lazy">
+          <figcaption>
+            <strong>2. 專案與輸出管理</strong>
+            <p>集中保存每次產出的海報、影片、Agent 對話、Artifact 版本與人工審核操作，方便追蹤完整決策歷程。</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="screenshots/03-agent-settings.png" alt="角色與 API 管理後台" loading="lazy">
+          <figcaption>
+            <strong>3. 角色與 API 管理後台</strong>
+            <p>切換模型 Provider、控制五個 AI 角色是否啟用，並直接編輯各角色的 System Prompt，設定可持久化保存。</p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
   </main>
 </body>
 </html>
