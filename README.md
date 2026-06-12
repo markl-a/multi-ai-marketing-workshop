@@ -1,11 +1,11 @@
 # 💡 iCue 智慧照護行銷工作坊 · 改版成果報告
 
 ## 📺 完整操作演示影片
-下方為自動化腳本為您錄製的系統操作演示（包含長照 3.0 Preset 一鍵套用、智慧照護簡報上傳與解析、AI 協作流程及成品渲染）：
+下方為自動化腳本錄製的系統操作演示（包含長照 3.0 Preset 一鍵套用、智慧照護簡報上傳與解析、AI 協作流程及成品渲染）：
 
-<video src="https://raw.githubusercontent.com/markl-a/multi-ai-marketing-workshop/main/icue_gemini_real_run.mp4" width="100%" style="max-height:500px;" controls></video>
+### [▶ 在瀏覽器中播放完整操作影片](https://markl-a.github.io/multi-ai-marketing-workshop/)
 
-*操作演示影片檔案：[icue_gemini_real_run.mp4](./icue_gemini_real_run.mp4)*
+也可以[直接開啟或下載 MP4 影片](./icue_gemini_real_run.mp4)。
 
 ---
 

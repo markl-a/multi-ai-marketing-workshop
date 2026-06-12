@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="iCue 智慧照護行銷工作坊完整操作演示影片">
+  <title>iCue 智慧照護行銷工作坊 | 操作演示</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #07111f;
+      color: #edf5ff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      padding: 32px 20px;
+      background:
+        radial-gradient(circle at 20% 10%, rgba(30, 167, 253, .18), transparent 35%),
+        radial-gradient(circle at 80% 90%, rgba(38, 208, 124, .12), transparent 35%),
+        #07111f;
+    }
+    main {
+      width: min(1080px, 100%);
+      padding: clamp(20px, 4vw, 48px);
+      border: 1px solid rgba(255, 255, 255, .12);
+      border-radius: 24px;
+      background: rgba(10, 25, 43, .82);
+      box-shadow: 0 24px 80px rgba(0, 0, 0, .38);
+    }
+    .eyebrow {
+      margin: 0 0 8px;
+      color: #63c5ff;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(28px, 5vw, 52px);
+      line-height: 1.15;
+    }
+    .summary {
+      max-width: 760px;
+      margin: 16px 0 28px;
+      color: #b8c8d9;
+      line-height: 1.7;
+    }
+    video {
+      display: block;
+      width: 100%;
+      max-height: 70vh;
+      border: 1px solid rgba(255, 255, 255, .14);
+      border-radius: 14px;
+      background: #000;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 22px;
+    }
+    a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+      padding: 0 18px;
+      border: 1px solid rgba(255, 255, 255, .18);
+      border-radius: 10px;
+      color: #edf5ff;
+      font-weight: 650;
+      text-decoration: none;
+    }
+    a:first-child {
+      border-color: #39aef2;
+      background: #168ad0;
+    }
+    a:hover { filter: brightness(1.12); }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">iCue Demo</p>
+    <h1>智慧照護行銷工作坊</h1>
+    <p class="summary">完整操作演示：長照 3.0 Preset、簡報解析、AI 協作流程與成品渲染。</p>
+    <video controls playsinline preload="metadata">
+      <source src="icue_gemini_real_run.mp4" type="video/mp4">
+      您的瀏覽器不支援 HTML5 影片播放，請使用下方連結下載影片。
+    </video>
+    <nav aria-label="影片相關連結">
+      <a href="icue_gemini_real_run.mp4" download>下載 MP4 影片</a>
+      <a href="https://github.com/markl-a/multi-ai-marketing-workshop">查看完整成果報告</a>
+    </nav>
+  </main>
+</body>
+</html>
