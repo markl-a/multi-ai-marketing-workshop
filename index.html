@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="iCue 智慧照護行銷工作坊操作影片、系統截圖與功能說明">
+  <meta name="description" content="iCue 智慧照護行銷工作坊操作影片、系統截圖、Hyperframes 影片引擎產品化與功能說明">
   <title>iCue 智慧照護行銷工作坊 | 成果展示</title>
   <style>
     :root {
@@ -120,19 +120,53 @@
       color: #b8c8d9;
       line-height: 1.7;
     }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 24px;
+    }
+    .feature-card {
+      padding: 24px;
+      border: 1px solid rgba(255, 255, 255, .1);
+      border-radius: 16px;
+      background: rgba(15, 30, 50, .6);
+      transition: border-color .2s, box-shadow .2s;
+    }
+    .feature-card:hover {
+      border-color: rgba(99, 197, 255, .3);
+      box-shadow: 0 8px 32px rgba(30, 167, 253, .08);
+    }
+    .feature-card .icon {
+      font-size: 28px;
+      margin-bottom: 12px;
+    }
+    .feature-card h3 {
+      margin: 0 0 8px;
+      font-size: 18px;
+      color: #edf5ff;
+    }
+    .feature-card p {
+      margin: 0;
+      color: #9fb1c5;
+      font-size: 14px;
+      line-height: 1.7;
+    }
   </style>
 </head>
 <body>
   <main>
     <p class="eyebrow">iCue Demo</p>
     <h1>智慧照護行銷工作坊</h1>
-    <p class="summary">完整操作演示：長照 3.0 Preset、簡報解析、AI 協作流程與成品渲染。</p>
+    <p class="summary">完整操作演示：長照 3.0 Preset、簡報解析、AI 協作流程、成品渲染，以及 Hyperframes 影片引擎產品化功能。</p>
     <video controls playsinline preload="metadata">
+      <source src="icue_gemini_real_run.webm" type="video/webm">
       <source src="icue_gemini_real_run.mp4" type="video/mp4">
       您的瀏覽器不支援 HTML5 影片播放，請使用下方連結下載影片。
     </video>
     <nav aria-label="影片相關連結">
       <a href="icue_gemini_real_run.mp4" download>下載 MP4 影片</a>
+      <a href="icue_gemini_real_run.webm" download>下載 WebM 影片</a>
       <a href="https://github.com/markl-a/multi-ai-marketing-workshop">查看完整成果報告</a>
     </nav>
 
@@ -161,6 +195,33 @@
             <p>切換模型 Provider、控制五個 AI 角色是否啟用，並直接編輯各角色的 System Prompt，設定可持久化保存。</p>
           </figcaption>
         </figure>
+      </div>
+    </section>
+
+    <section aria-labelledby="hyperframes-title">
+      <h2 id="hyperframes-title">🎬 Hyperframes 影片引擎產品化</h2>
+      <p class="section-summary">本次升級將影片生成從概念驗證推進到生產就緒狀態，新增四大子系統。</p>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="icon">🔗</div>
+          <h3>素材輸入管線</h3>
+          <p>支援拖放上傳圖片與 URL 自動抓取，內建 SSRF 防護與品質預檢。上傳的素材自動建立 SourceAsset 記錄，可查詢、預覽與刪除。</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">✅</div>
+          <h3>品質閘門</h3>
+          <p>渲染前自動執行解析度、幀率與色彩空間驗證。每次渲染完成後自動產出品質報告 JSON，記錄通過/失敗項目與量化分數。</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">🎞️</div>
+          <h3>HITL 時間軸編輯器</h3>
+          <p>以視覺化拖放方式調整場景順序、即時預覽、刪除不需要的場景，編輯完成後一鍵套用並重新渲染。</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">📊</div>
+          <h3>可觀測性面板</h3>
+          <p>即時顯示錯誤日誌、渲染進度追蹤與系統診斷 API，提供執行狀態的完整透明度。</p>
+        </div>
       </div>
     </section>
   </main>
